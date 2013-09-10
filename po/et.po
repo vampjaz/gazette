@@ -1,0 +1,344 @@
+# Estonian translation for gazette
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the gazette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gazette\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-07-29 10:28+0200\n"
+"PO-Revision-Date: 2013-08-16 14:04+0000\n"
+"Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
+"Language-Team: Estonian <et@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-08-17 06:17+0000\n"
+"X-Generator: Launchpad (build 16723)\n"
+
+#: /home/julia/gazette/po/../src/Gazette.vala:47
+#, c-format
+msgid "Welcome"
+msgstr "Tere tulemast"
+
+#: /home/julia/gazette/po/../src/Services/Files.vala:18
+#: /home/julia/gazette/po/../src/Plugs/RecentFiles.vala:6
+#, c-format
+msgid "Files"
+msgstr "Failid:"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:57
+msgid "Tornado"
+msgstr "Tornaado"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:58
+msgid "Tropical storm"
+msgstr "Troopiline torm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:59
+msgid "Hurricane"
+msgstr "Orkaan"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:60
+msgid "Severe thunderstorms"
+msgstr "Ränk äikesetorm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:61
+msgid "Thunderstorms"
+msgstr "Äikesetorm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:62
+msgid "Mixed rain and snow"
+msgstr "Vihm ja lumi"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:63
+msgid "Mixed rain and sleet"
+msgstr "Vihm ja lörts"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:64
+msgid "Mixed snow and sleet"
+msgstr "Lumi ja lörts"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:65
+msgid "Freezing drizzle"
+msgstr "Jäätuv uduvihm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:66
+msgid "Drizzle"
+msgstr "Uduvihm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:67
+msgid "Freezing rain"
+msgstr "Jäävihm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:68
+#: /home/julia/gazette/po/../src/Services/Weather.vala:69
+msgid "Showers"
+msgstr "Hoovihm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:70
+msgid "Snow flurries"
+msgstr "Kerge lumeudu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:71
+msgid "Light snow showers"
+msgstr "Kerged lumehood"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:72
+msgid "Blowing snow"
+msgstr "Tuisk"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:73
+msgid "Snow"
+msgstr "Lumi"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:74
+msgid "Hail"
+msgstr "Rahe"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:75
+msgid "Sleet"
+msgstr "Lörts"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:76
+msgid "Dust"
+msgstr "Tolm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:77
+msgid "Foggy"
+msgstr "Udune"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:78
+msgid "Haze"
+msgstr "Sudu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:79
+msgid "Smoky"
+msgstr "Suitsune"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:80
+msgid "Blustery"
+msgstr "Tormine"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:81
+msgid "Windy"
+msgstr "Tuuline"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:82
+msgid "Cold"
+msgstr "Külm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:83
+msgid "Cloudy"
+msgstr "Pilvine"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:84
+#: /home/julia/gazette/po/../src/Services/Weather.vala:85
+msgid "Mostly cloudy"
+msgstr "Peamiselt pilves"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:86
+#: /home/julia/gazette/po/../src/Services/Weather.vala:87
+#: /home/julia/gazette/po/../src/Services/Weather.vala:101
+msgid "Partly cloudy"
+msgstr "Osaliselt pilves"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:88
+msgid "Clear"
+msgstr "Selge"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:89
+msgid "Sunny"
+msgstr "Päikseline"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:90
+#: /home/julia/gazette/po/../src/Services/Weather.vala:91
+msgid "Fair"
+msgstr "Selge"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:92
+msgid "Mixed rain and hail"
+msgstr "Vihm ja rahe"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:93
+msgid "Hot"
+msgstr "Palav"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:94
+msgid "Isolated thunderstorms"
+msgstr "Kohatised äikesetormid"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:95
+#: /home/julia/gazette/po/../src/Services/Weather.vala:96
+msgid "Scattered thunderstorms"
+msgstr "Pillutatud äiksetormid"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:97
+msgid "Scattered showers"
+msgstr "Pillutatud hoovihmad"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:98
+#: /home/julia/gazette/po/../src/Services/Weather.vala:100
+msgid "Heavy snow"
+msgstr "Tugev lumesadu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:99
+msgid "Scattered snow showers"
+msgstr "Pillutatud hootised lumesajud"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:102
+msgid "Thundershowers"
+msgstr "Hootised äikesevihmad"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:103
+msgid "Snow showers"
+msgstr "Hootised lumesajud"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:104
+msgid "Isolated thundershowers"
+msgstr "Eraldi hootsed äikesevihmad"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:105
+msgid "Not available"
+msgstr "Pole saadaval"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:109
+msgid "Mon"
+msgstr "Esmasp."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:110
+msgid "Tue"
+msgstr "Teisip."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:111
+msgid "Wed"
+msgstr "Kolmap."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:112
+msgid "Thu"
+msgstr "Neljap."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:113
+msgid "Fri"
+msgstr "Reede"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:114
+msgid "Sat"
+msgstr "Laup."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:115
+msgid "Sun"
+msgstr "Pühap."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:132
+msgid "weather"
+msgstr "ilm"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:169
+msgid ""
+"Loading weather,\n"
+"please wait."
+msgstr ""
+"Ilma andmete laadimine,\n"
+"palun oota."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:191
+#, c-format
+msgid "%A"
+msgstr "%A"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:19
+msgid "news"
+msgstr "uudised"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:41
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:12
+#, c-format
+msgid "News"
+msgstr "Uudised:"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:60
+msgid ""
+"Loading news,\n"
+"please wait."
+msgstr ""
+"Uudiste otsimine,\n"
+"palun oota."
+
+#: /home/julia/gazette/po/../src/Services/Service.vala:116
+msgid "Could not retrieve "
+msgstr "Polnud võimalik laadida "
+
+#: /home/julia/gazette/po/../src/Services/Service.vala:116
+msgid "click here to try again"
+msgstr "vajuta siia, et uuesti proovida"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:11
+msgid "Weather Forecast"
+msgstr "Ilmateade"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:27
+msgid "Location ID"
+msgstr "Asukoha ID"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:27
+msgid "Unit"
+msgstr "Ühik"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:41
+msgid ""
+"Example: If the URL is <i>http://weather.yahoo.com/united-"
+"kingdom/england/london-44418/</i> the city's ID is 44418."
+msgstr ""
+"Näide: Kui URL on <i>http://weather.yahoo.com/united-kingdom/england/london-"
+"44418/</i>, siis asukoha ID on 44418."
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:73
+msgid "Search Location ID on Yahoo!® Weather"
+msgstr "Otsi asukoha ID-d Yahoo!® Weather'i abil"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:80
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:64
+msgid "Reset"
+msgstr "Lähtesta"
+
+#: /home/julia/gazette/po/../src/Plugs/main.vala:28
+msgid ""
+"Setup your\n"
+"news services"
+msgstr ""
+"Uudisteenuste\n"
+"seadistamine"
+
+#: /home/julia/gazette/po/../src/Plugs/main.vala:84
+msgid "Column News"
+msgstr "Uudisteenused"
+
+#: /home/julia/gazette/po/../src/Plugs/RecentFiles.vala:8
+msgid "No settings yet."
+msgstr "Eelistused puuduvad."
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:27
+msgid "URL"
+msgstr "URL"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:42
+msgid "Refresh Interval"
+msgstr "Andmete värskendamise ajavahemik"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:49
+msgid "5 min"
+msgstr "5 min"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:50
+msgid "20 min"
+msgstr "20 min"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:51
+msgid "40 min"
+msgstr "40 min"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:52
+msgid "1 hour"
+msgstr "1 tund"

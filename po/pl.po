@@ -1,0 +1,344 @@
+# Polish translation for gazette
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the gazette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gazette\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-07-29 10:28+0200\n"
+"PO-Revision-Date: 2013-08-03 16:00+0000\n"
+"Last-Translator: Adrian Widerski <Unknown>\n"
+"Language-Team: Polish <pl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-08-04 05:37+0000\n"
+"X-Generator: Launchpad (build 16718)\n"
+
+#: /home/julia/gazette/po/../src/Gazette.vala:47
+#, c-format
+msgid "Welcome"
+msgstr "Witaj"
+
+#: /home/julia/gazette/po/../src/Services/Files.vala:18
+#: /home/julia/gazette/po/../src/Plugs/RecentFiles.vala:6
+#, c-format
+msgid "Files"
+msgstr "Pliki"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:57
+msgid "Tornado"
+msgstr "Trąba powietrzna"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:58
+msgid "Tropical storm"
+msgstr "Cyklon tropikalny"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:59
+msgid "Hurricane"
+msgstr "Huragan"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:60
+msgid "Severe thunderstorms"
+msgstr "Silne burze"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:61
+msgid "Thunderstorms"
+msgstr "Burze"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:62
+msgid "Mixed rain and snow"
+msgstr "Deszcz ze śniegiem"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:63
+msgid "Mixed rain and sleet"
+msgstr "Deszcz i deszcz ze śniegiem"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:64
+msgid "Mixed snow and sleet"
+msgstr "Śnieg i deszcz ze śniegiem"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:65
+msgid "Freezing drizzle"
+msgstr "Marznąca mżawka"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:66
+msgid "Drizzle"
+msgstr "Mżawka"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:67
+msgid "Freezing rain"
+msgstr "Marznący deszcz"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:68
+#: /home/julia/gazette/po/../src/Services/Weather.vala:69
+msgid "Showers"
+msgstr "Przelotne deszcze"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:70
+msgid "Snow flurries"
+msgstr "Lekki śnieg"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:71
+msgid "Light snow showers"
+msgstr "Lekkie, przelotne opady śniegu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:72
+msgid "Blowing snow"
+msgstr "Zamieć śnieżna"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:73
+msgid "Snow"
+msgstr "Śnieg"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:74
+msgid "Hail"
+msgstr "Grad"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:75
+msgid "Sleet"
+msgstr "Deszcz ze śniegiem"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:76
+msgid "Dust"
+msgstr "Pył"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:77
+msgid "Foggy"
+msgstr "Mgła"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:78
+msgid "Haze"
+msgstr "Zamglenia"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:79
+msgid "Smoky"
+msgstr "Zadymienie"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:80
+msgid "Blustery"
+msgstr "Porywisty wiatr"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:81
+msgid "Windy"
+msgstr "Wietrznie"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:82
+msgid "Cold"
+msgstr "Zimno"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:83
+msgid "Cloudy"
+msgstr "Pochmurnie"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:84
+#: /home/julia/gazette/po/../src/Services/Weather.vala:85
+msgid "Mostly cloudy"
+msgstr "Przewaga chmur"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:86
+#: /home/julia/gazette/po/../src/Services/Weather.vala:87
+#: /home/julia/gazette/po/../src/Services/Weather.vala:101
+msgid "Partly cloudy"
+msgstr "Częściowe zachmurzenie"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:88
+msgid "Clear"
+msgstr "Pogodnie"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:89
+msgid "Sunny"
+msgstr "Słonecznie"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:90
+#: /home/julia/gazette/po/../src/Services/Weather.vala:91
+msgid "Fair"
+msgstr "Bezchmurnie"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:92
+msgid "Mixed rain and hail"
+msgstr "Deszcz z gradem"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:93
+msgid "Hot"
+msgstr "Gorąco"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:94
+msgid "Isolated thunderstorms"
+msgstr "Lokalne burze"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:95
+#: /home/julia/gazette/po/../src/Services/Weather.vala:96
+msgid "Scattered thunderstorms"
+msgstr "Rozproszone burze"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:97
+msgid "Scattered showers"
+msgstr "Przelotne deszcze"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:98
+#: /home/julia/gazette/po/../src/Services/Weather.vala:100
+msgid "Heavy snow"
+msgstr "Obfite opady śniegu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:99
+msgid "Scattered snow showers"
+msgstr "Sporadyczne opady śniegu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:102
+msgid "Thundershowers"
+msgstr "Burze z przelotnymi opadami deszczu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:103
+msgid "Snow showers"
+msgstr "Przelotne opady śniegu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:104
+msgid "Isolated thundershowers"
+msgstr "Lokalne burze z przelotnymi opadami deszczu"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:105
+msgid "Not available"
+msgstr "Niedostępne"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:109
+msgid "Mon"
+msgstr "Pn"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:110
+msgid "Tue"
+msgstr "Wt"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:111
+msgid "Wed"
+msgstr "Śr"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:112
+msgid "Thu"
+msgstr "Czw"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:113
+msgid "Fri"
+msgstr "Pt"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:114
+msgid "Sat"
+msgstr "So"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:115
+msgid "Sun"
+msgstr "Ni"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:132
+msgid "weather"
+msgstr "pogoda"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:169
+msgid ""
+"Loading weather,\n"
+"please wait."
+msgstr ""
+"Ładuję pogodę,\n"
+"proszę czekać."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:191
+#, c-format
+msgid "%A"
+msgstr "%A"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:19
+msgid "news"
+msgstr "aktualności"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:41
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:12
+#, c-format
+msgid "News"
+msgstr "Aktualności"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:60
+msgid ""
+"Loading news,\n"
+"please wait."
+msgstr ""
+"Wczytywanie aktualności,\n"
+"to może chwilkę potrwać."
+
+#: /home/julia/gazette/po/../src/Services/Service.vala:116
+msgid "Could not retrieve "
+msgstr "Nie udało się wczytać "
+
+#: /home/julia/gazette/po/../src/Services/Service.vala:116
+msgid "click here to try again"
+msgstr "kliknij, aby spróbować ponownie"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:11
+msgid "Weather Forecast"
+msgstr "Prognoza pogody"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:27
+msgid "Location ID"
+msgstr "ID lokalizacji"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:27
+msgid "Unit"
+msgstr "Jednostka"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:41
+msgid ""
+"Example: If the URL is <i>http://weather.yahoo.com/united-"
+"kingdom/england/london-44418/</i> the city's ID is 44418."
+msgstr ""
+"Na przykład: W przypadku adresu URL <i>http://weather.yahoo.com/united-"
+"kingdom/england/london-44418/</i> ID miasta jest równe 44418."
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:73
+msgid "Search Location ID on Yahoo!® Weather"
+msgstr "Znajdź ID lokalizacji na stronie Yahoo!® Weather"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:80
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:64
+msgid "Reset"
+msgstr "Zresetuj"
+
+#: /home/julia/gazette/po/../src/Plugs/main.vala:28
+msgid ""
+"Setup your\n"
+"news services"
+msgstr ""
+"Ustaw swoje\n"
+"usługi informacyjne"
+
+#: /home/julia/gazette/po/../src/Plugs/main.vala:84
+msgid "Column News"
+msgstr "Informator"
+
+#: /home/julia/gazette/po/../src/Plugs/RecentFiles.vala:8
+msgid "No settings yet."
+msgstr "Na razie brak ustawień."
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:27
+msgid "URL"
+msgstr "URL"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:42
+msgid "Refresh Interval"
+msgstr "Częstość odświeżania"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:49
+msgid "5 min"
+msgstr "5 min"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:50
+msgid "20 min"
+msgstr "20 min"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:51
+msgid "40 min"
+msgstr "40 min"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:52
+msgid "1 hour"
+msgstr "1 godzina"

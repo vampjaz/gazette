@@ -1,0 +1,338 @@
+# Ukrainian translation for gazette
+# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# This file is distributed under the same license as the gazette package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gazette\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-07-29 10:28+0200\n"
+"PO-Revision-Date: 2013-09-03 22:53+0000\n"
+"Last-Translator: Oleksa Stasevych <Unknown>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-09-04 05:04+0000\n"
+"X-Generator: Launchpad (build 16753)\n"
+
+#: /home/julia/gazette/po/../src/Gazette.vala:47
+#, c-format
+msgid "Welcome"
+msgstr "Вітаємо"
+
+#: /home/julia/gazette/po/../src/Services/Files.vala:18
+#: /home/julia/gazette/po/../src/Plugs/RecentFiles.vala:6
+#, c-format
+msgid "Files"
+msgstr "Файли"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:57
+msgid "Tornado"
+msgstr "Ураган"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:58
+msgid "Tropical storm"
+msgstr "Тропічний шторм"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:59
+msgid "Hurricane"
+msgstr "Буревій"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:60
+msgid "Severe thunderstorms"
+msgstr "Сильні грози"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:61
+msgid "Thunderstorms"
+msgstr "Грози"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:62
+msgid "Mixed rain and snow"
+msgstr "Дощ зі снігом"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:63
+msgid "Mixed rain and sleet"
+msgstr "Дощ та мокрий сніг"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:64
+msgid "Mixed snow and sleet"
+msgstr "Ожеледиця"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:65
+msgid "Freezing drizzle"
+msgstr "Дрібний льодяний дощ"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:66
+msgid "Drizzle"
+msgstr "Мжичка"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:67
+msgid "Freezing rain"
+msgstr "Дощ з мокрим снігом"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:68
+#: /home/julia/gazette/po/../src/Services/Weather.vala:69
+msgid "Showers"
+msgstr "Зливи"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:70
+msgid "Snow flurries"
+msgstr "Завірюха"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:71
+msgid "Light snow showers"
+msgstr "Помірний сніг"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:72
+msgid "Blowing snow"
+msgstr "Хуртовина"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:73
+msgid "Snow"
+msgstr "Сніг"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:74
+msgid "Hail"
+msgstr "Град"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:75
+msgid "Sleet"
+msgstr "Дощ зі снігом"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:76
+msgid "Dust"
+msgstr "Пил"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:77
+msgid "Foggy"
+msgstr "Туман"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:78
+msgid "Haze"
+msgstr "Легка імла"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:79
+msgid "Smoky"
+msgstr "Імла"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:80
+msgid "Blustery"
+msgstr "Пориви вітру"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:81
+msgid "Windy"
+msgstr "Вітряно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:82
+msgid "Cold"
+msgstr "Прохолодно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:83
+msgid "Cloudy"
+msgstr "Хмарно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:84
+#: /home/julia/gazette/po/../src/Services/Weather.vala:85
+msgid "Mostly cloudy"
+msgstr "Переважно хмарно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:86
+#: /home/julia/gazette/po/../src/Services/Weather.vala:87
+#: /home/julia/gazette/po/../src/Services/Weather.vala:101
+msgid "Partly cloudy"
+msgstr "Місцями хмарно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:88
+msgid "Clear"
+msgstr "Ясно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:89
+msgid "Sunny"
+msgstr "Сонячно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:90
+#: /home/julia/gazette/po/../src/Services/Weather.vala:91
+msgid "Fair"
+msgstr "Ясно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:92
+msgid "Mixed rain and hail"
+msgstr "Дощ з градом"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:93
+msgid "Hot"
+msgstr "Спекотно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:94
+msgid "Isolated thunderstorms"
+msgstr "Подекуди грози"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:95
+#: /home/julia/gazette/po/../src/Services/Weather.vala:96
+msgid "Scattered thunderstorms"
+msgstr "Місцями грози"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:97
+msgid "Scattered showers"
+msgstr "Місцями зливи"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:98
+#: /home/julia/gazette/po/../src/Services/Weather.vala:100
+msgid "Heavy snow"
+msgstr "Сильний сніг"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:99
+msgid "Scattered snow showers"
+msgstr "Подекуди снігопади"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:102
+msgid "Thundershowers"
+msgstr "Грозові зливи"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:103
+msgid "Snow showers"
+msgstr "Хурделиця"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:104
+msgid "Isolated thundershowers"
+msgstr "Подекуди грозові зливи"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:105
+msgid "Not available"
+msgstr "Недоступно"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:109
+msgid "Mon"
+msgstr "пн"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:110
+msgid "Tue"
+msgstr "вт"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:111
+msgid "Wed"
+msgstr "ср"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:112
+msgid "Thu"
+msgstr "чт"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:113
+msgid "Fri"
+msgstr "пт"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:114
+msgid "Sat"
+msgstr "сб"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:115
+msgid "Sun"
+msgstr "нд"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:132
+msgid "weather"
+msgstr "погода"
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:169
+msgid ""
+"Loading weather,\n"
+"please wait."
+msgstr "Зачекайте, будь ласка, завантажується прогноз погоди."
+
+#: /home/julia/gazette/po/../src/Services/Weather.vala:191
+#, c-format
+msgid "%A"
+msgstr "%A"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:19
+msgid "news"
+msgstr "новини"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:41
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:12
+#, c-format
+msgid "News"
+msgstr "Новини"
+
+#: /home/julia/gazette/po/../src/Services/News.vala:60
+msgid ""
+"Loading news,\n"
+"please wait."
+msgstr "Зачекайте, будь ласка, завантажуються новини."
+
+#: /home/julia/gazette/po/../src/Services/Service.vala:116
+msgid "Could not retrieve "
+msgstr "Дані неможливо отримати "
+
+#: /home/julia/gazette/po/../src/Services/Service.vala:116
+msgid "click here to try again"
+msgstr "клацніть, щоб спробувати ще раз"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:11
+msgid "Weather Forecast"
+msgstr "Прогноз погоди"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:27
+msgid "Location ID"
+msgstr "Ідентифікатор місця"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:27
+msgid "Unit"
+msgstr "Одиниця виміру"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:41
+msgid ""
+"Example: If the URL is <i>http://weather.yahoo.com/united-"
+"kingdom/england/london-44418/</i> the city's ID is 44418."
+msgstr ""
+"Приклад:  якщо URL-адреса містить <i>http://weather.yahoo.com/united-"
+"kingdom/england/london-44418/</i>, то ідентифікатор міста - це 44418."
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:73
+msgid "Search Location ID on Yahoo!® Weather"
+msgstr "Шукати ідентифікатор розташування на Yahoo!® Weather"
+
+#: /home/julia/gazette/po/../src/Plugs/Weather.vala:80
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:64
+msgid "Reset"
+msgstr "Відновити початкові налаштування"
+
+#: /home/julia/gazette/po/../src/Plugs/main.vala:28
+msgid ""
+"Setup your\n"
+"news services"
+msgstr "Встановити власні нові сервіси"
+
+#: /home/julia/gazette/po/../src/Plugs/main.vala:84
+msgid "Column News"
+msgstr "Стрічка новин"
+
+#: /home/julia/gazette/po/../src/Plugs/RecentFiles.vala:8
+msgid "No settings yet."
+msgstr "Поки що відсутні налаштування."
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:27
+msgid "URL"
+msgstr "URL-адреса"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:42
+msgid "Refresh Interval"
+msgstr "Інтервал поновлення"
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:49
+msgid "5 min"
+msgstr "5 хв."
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:50
+msgid "20 min"
+msgstr "20 хв."
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:51
+msgid "40 min"
+msgstr "40 хв."
+
+#: /home/julia/gazette/po/../src/Plugs/RSS.vala:52
+msgid "1 hour"
+msgstr "1 година"

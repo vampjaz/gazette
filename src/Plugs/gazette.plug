@@ -1,0 +1,6 @@
+[gazette.plug]
+exec=Gazette
+icon=gazette
+title=Column News
+category=personal
+X-GNOME-Gettext-Domain=gazette
