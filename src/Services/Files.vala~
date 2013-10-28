@@ -15,7 +15,7 @@ public class Files : Service
 
 	public override void create ()
 	{
-		var files_label = new ShadowedLabel ("<span font='20' face='Raleway' color='black'>%s</span>".printf (_("Files")));
+		var files_label = new ShadowedLabel ("<span font='20' face='Raleway'>%s</span>".printf (_("Files")));
 		files_list = new ShadowedLabel ("");
 		files_list.y = files_label.height + 12;
 		files_list.x = 12;
@@ -42,7 +42,7 @@ public class Files : Service
 	{
 	    debug("Updating Recent Files");
 	    files_list.reactive = false;
-		var res = "<span font='12' face='Open Sans' color='black'>";
+		var res = "<span font='12' face='Open Sans'>";
 		for (var i = 0; i < 10 && i < last_files.length (); i++) {
 			res += ellipsize (last_files.nth_data (i).get_display_name (), 40) + "\n";
 		}
