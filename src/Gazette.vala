@@ -1,5 +1,7 @@
 using Clutter;
 
+const string textcolor = "blue";
+
 public class GlobalSettings : Granite.Services.Settings
 {
 	public string[] services_enabled { get; set; }
@@ -44,7 +46,7 @@ public class Gazette : Granite.Application
 		var size = window.reposition ();
 		window.show_all ();
 
-		var welcome = new ShadowedLabel("<span font='50' face='Raleway' color='black'>%s</span>".printf (_("Welcome") + ", " + Environment.get_real_name ()));
+		var welcome = new ShadowedLabel("<span font='50' face='Raleway' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_("Welcome") + ", " + Environment.get_real_name ()));
 		welcome.x = 50;
 		welcome.y = 200;
 		welcome.opacity = 0;
@@ -55,7 +57,7 @@ public class Gazette : Granite.Application
 		});
 		window.stage.add_child (welcome);
 var randomlinetext = "______________________________________";
-        var randomline1 = new ShadowedLabel("<span font='10' face='FreeMono' color='black'>%s</span>".printf (_(randomlinetext)));
+        var randomline1 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext)));
 		randomline1.x = 760;
 		randomline1.y = 260;
 		randomline1.opacity = 0;
@@ -67,7 +69,7 @@ var randomlinetext = "______________________________________";
 		});
 
 		window.stage.add_child (randomline1);
-        var randomline2 = new ShadowedLabel("<span font='10' face='FreeMono' color='black'>%s</span>".printf (_(randomlinetext)));
+        var randomline2 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext)));
 		randomline2.x = 50;
 		randomline2.y = 195;
 		randomline2.opacity = 0;

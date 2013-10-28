@@ -166,7 +166,7 @@ public class Weather : Service
 	public override bool update() {
 	    debug ("Updating Weather");
 	    reload.hide ();
-	    label.label = "<span face='Open Sans Light' font='16'  color='black'>" + _("Loading weather,\nplease wait.") + "</span>";
+	    label.label = "<span face='Open Sans Light' font='16'  color='%s'".printf (_(textcolor)) + ">" + _("Loading weather,\nplease wait.") + "</span>";
 	    label.show ();
 		string id = settings.get_int ("weather-id").to_string();
 		unit = settings.get_string ("weather-unit") == "Fahrenheit" ? "f" : "c";
@@ -191,19 +191,19 @@ public class Weather : Service
 			var today = new DateTime.now_local ().format (_("%A"));
  
 			text = 
-                "<span face='Open Sans Light' font='24' color='black'>" + today + "</span>" +
-                "<span face='Open Sans Light' font='16' color='black'> // <i>" + condition_texts[int.parse (current[2])] +"</i></span>\n" +
-				"<span face='gazetteweather' font='68' color='black'>" + condition_codes[int.parse (current[2])] + "</span>" +
-				"<span face='Raleway' weight='100' font='72' color='black'> " + current[0] + "</span>" +
-				"<span face='Raleway' weight='100' font='40' color='black'> ° " + unit.up () + "</span>\n" + 
+                "<span face='Open Sans Light' font='24' color='%s'".printf (_(textcolor)) + ">" + today + "</span>" +
+                "<span face='Open Sans Light' font='16' color='%s'".printf (_(textcolor)) + "> // <i>" + condition_texts[int.parse (current[2])] +"</i></span>\n" +
+				"<span face='gazetteweather' font='68' color='%s'".printf (_(textcolor)) + ">" + condition_codes[int.parse (current[2])] + "</span>" +
+				"<span face='Raleway' weight='100' font='72' color='%s'".printf (_(textcolor)) + "> " + current[0] + "</span>" +
+				"<span face='Raleway' weight='100' font='40' color='%s'".printf (_(textcolor)) + "> ° " + unit.up () + "</span>\n" + 
 
-				"<span face='gazetteweather' font='30' color='black'>" + condition_codes[int.parse (forecast[5])] + "</span>" +
-				"<span face='Open Sans Light' font='26' color='black'> " + _(forecast[0]) + "     </span>" + 
-				"<span face='gazetteweather' font='30' color='black'>" + condition_codes[int.parse (forecast2[5])] + "</span>" +
-				"<span face='Open Sans Light' font='26' color='black'> " + _(forecast2[0]) + "</span>\n"+
+				"<span face='gazetteweather' font='30' color='%s'".printf (_(textcolor)) + ">" + condition_codes[int.parse (forecast[5])] + "</span>" +
+				"<span face='Open Sans Light' font='26' color='%s'".printf (_(textcolor)) + "> " + _(forecast[0]) + "     </span>" + 
+				"<span face='gazetteweather' font='30' color='%s'".printf (_(textcolor)) + ">" + condition_codes[int.parse (forecast2[5])] + "</span>" +
+				"<span face='Open Sans Light' font='26' color='%s'".printf (_(textcolor)) + "> " + _(forecast2[0]) + "</span>\n"+
 
-				"<span face='Raleway' font='21' color='black'>" + forecast[2] + " - " + forecast[3] +"°"+unit.up()+"      </span>"+
-				"<span face='Raleway' font='21' color='black'>" + forecast2[2] + " - " + forecast2[3] +"°"+unit.up()+"      </span>";
+				"<span face='Raleway' font='21' color='%s'".printf (_(textcolor)) + ">" + forecast[2] + " - " + forecast[3] +"°"+unit.up()+"      </span>"+
+				"<span face='Raleway' font='21' color='%s'".printf (_(textcolor)) + ">" + forecast2[2] + " - " + forecast2[3] +"°"+unit.up()+"      </span>";
 			label.label = text;
 	    });
 	    return true;
