@@ -1,6 +1,6 @@
 using Clutter;
 
-const string textcolor = "blue";
+const string textcolor = "black";
 
 public class GlobalSettings : Granite.Services.Settings
 {
