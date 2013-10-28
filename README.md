@@ -28,7 +28,7 @@ To change the text color, open src/Gazette.vala in a text editor. The third line
 
     constant string textcolor = "whatever color you want the text to be";
 
-The color can be a common name (blue, red, black) or any HTML allowed color. To set the color:
+The color can be a common name (blue, red, black) or any HTML allowed color. To set the color once it has been changed:
 
     # if gazette is running, kill it:
     killall gazette
