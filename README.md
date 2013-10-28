@@ -5,6 +5,8 @@ A fork of the gazette newsreader for elementaryOS
 
 Forked from https://launchpad.net/gazette
 
+This branch has a black color scheme in stead of a white one.
+
 How to compile:
 ===============
 
