@@ -4,3 +4,4 @@ CMakeCache.txt
 Makefile
 gazette
 install_manifest.txt
+cmake_install.cmake
