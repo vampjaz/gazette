@@ -10,7 +10,7 @@ This branch has a black color scheme in stead of a white one.
 How to compile:
 ===============
 
-In the terminal, navigate to your desired folder (anywhere you have write access), then:
+In the terminal, navigate to your desired folder (anywhere you have write access), then type or copy this and run in the terminal:
 
     # install dependencies  
     sudo apt-get install git cmake valac libclutter-1.0-dev libclutter-gtk-1.0-dev libzeitgeist-dev libgoa-1.0-dev libgoa-1.0-0 libsoup2.4-dev libgdata-dev
@@ -24,11 +24,11 @@ In the terminal, navigate to your desired folder (anywhere you have write access
 
 **Changing colors**
 
-To change the text color, open src/Gazette.vala in a text editor. The third line should say:
+To change the text color, open whatever-folder-gazette-was-downloaded-in/gazette/src/Gazette.vala in a text editor. The third line should say:
 
     constant string textcolor = "whatever color you want the text to be";
-
-The color can be a common name (blue, red, black) or any HTML allowed color. To set the color once it has been changed:
+Then save the file.
+The color can be a common name (blue, red, black, etc...) or any HTML allowed color. To set the color once it has been changed, run these commands in the terminal:
 
     # if gazette is running, kill it:
     killall gazette
