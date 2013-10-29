@@ -1,4 +1,0 @@
-/home/jackson/Programming/Git/gazette_Color-schemes/src/Plugs/CMakeFiles/Gazette.dir
-/home/jackson/Programming/Git/gazette_Color-schemes/CMakeFiles/gazette.dir
-/home/jackson/Programming/Git/gazette_Color-schemes/po/CMakeFiles/i18n.dir
-/home/jackson/Programming/Git/gazette_Color-schemes/po/CMakeFiles/pot.dir

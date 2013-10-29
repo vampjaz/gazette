@@ -1,5 +1,0 @@
-# Hashes of file build rules.
-deca9fd9f7bb49151f46113971452f82 po/CMakeFiles/i18n
-deca9fd9f7bb49151f46113971452f82 po/CMakeFiles/pot
-94511d91e343dfe2c0f69ba033bc2882 src/Gazette.c
-3c4dcbf7fce78af1f45c8d72f2d4cb94 src/Plugs/main.c
