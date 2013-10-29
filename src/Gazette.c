@@ -1234,7 +1234,7 @@ static void gazette_real_activate (GApplication* base) {
 	_g_free0 (_tmp92_);
 	_data1_->welcome2 = _tmp99_;
 	_tmp100_ = _data1_->welcome2;
-	clutter_actor_set_x ((ClutterActor*) _tmp100_, (gfloat) 50);
+	clutter_actor_set_x ((ClutterActor*) _tmp100_, (gfloat) 300);
 	_tmp101_ = _data1_->welcome2;
 	clutter_actor_set_y ((ClutterActor*) _tmp101_, (gfloat) 300);
 	_tmp102_ = _data1_->welcome2;

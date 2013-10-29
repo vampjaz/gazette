@@ -84,7 +84,7 @@ var randomlinetext = "______________________________________";
 		// gazette is loading...
 
 		var welcome2 = new ShadowedLabel("<span font='50' face='Raleway' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_("Gazette is loading...")));
-		welcome2.x = 50;
+		welcome2.x = 300;
 		welcome2.y = 300;
 		welcome2.opacity = 0;
 		welcome2.animate (AnimationMode.LINEAR, 500, opacity : 255, x : 300.0f).get_timeline ().completed.connect (() => {

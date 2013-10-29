@@ -87,9 +87,9 @@ var randomlinetext = "______________________________________";
 		welcome2.x = 50;
 		welcome2.y = 300;
 		welcome2.opacity = 0;
-		welcome2.animate (AnimationMode.LINEAR, 500, opacity : 255, x : 250.0f).get_timeline ().completed.connect (() => {
+		welcome2.animate (AnimationMode.LINEAR, 500, opacity : 255, x : 300.0f).get_timeline ().completed.connect (() => {
 			welcome2.animate (AnimationMode.LINEAR, 1000, x : 200.0f).get_timeline ().completed.connect (() => {
-				welcome2.animate (AnimationMode.LINEAR, 500, x : 100.0f, opacity : 0);
+				welcome2.animate (AnimationMode.LINEAR, 500, x : 150.0f, opacity : 0);
 			});
 		});
 		window.stage.add_child (welcome2);
