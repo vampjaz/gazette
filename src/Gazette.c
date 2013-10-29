@@ -135,6 +135,9 @@ struct _Block1Data {
 	ShadowedLabel* welcome;
 	ShadowedLabel* randomline1;
 	ShadowedLabel* randomline2;
+	ShadowedLabel* welcome2;
+	ShadowedLabel* randomline3;
+	ShadowedLabel* randomline4;
 };
 
 
@@ -143,7 +146,7 @@ static GlobalSettings* global_settings_instance;
 static GlobalSettings* global_settings_instance = NULL;
 static gpointer gazette_parent_class = NULL;
 
-#define textcolor "blue"
+#define textcolor "black"
 GType global_settings_get_type (void) G_GNUC_CONST;
 #define GLOBAL_SETTINGS_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), TYPE_GLOBAL_SETTINGS, GlobalSettingsPrivate))
 enum  {
@@ -189,7 +192,19 @@ static void __lambda8_ (Block1Data* _data1_);
 static void __lambda9_ (Block1Data* _data1_);
 static void ___lambda9__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
 static void ___lambda8__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
-static gboolean __lambda10_ (Block1Data* _data1_);
+static void __lambda10_ (Block1Data* _data1_);
+static void __lambda11_ (Block1Data* _data1_);
+static void ___lambda11__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
+static void ___lambda10__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
+static void __lambda12_ (Block1Data* _data1_);
+static void __lambda13_ (Block1Data* _data1_);
+static void ___lambda13__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
+static void ___lambda12__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
+static void __lambda14_ (Block1Data* _data1_);
+static void __lambda15_ (Block1Data* _data1_);
+static void ___lambda15__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
+static void ___lambda14__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self);
+static gboolean __lambda16_ (Block1Data* _data1_);
 static gchar** _vala_array_dup2 (gchar** self, int length);
 static void gazette_parse_coords (Gazette* self, const gchar* service, gchar** id, gint* x, gint* y);
 Files* files_new (void);
@@ -202,7 +217,7 @@ GType weather_get_type (void) G_GNUC_CONST;
 News* news_new (void);
 News* news_construct (GType object_type);
 GType news_get_type (void) G_GNUC_CONST;
-static gboolean ___lambda10__gsource_func (gpointer self);
+static gboolean ___lambda16__gsource_func (gpointer self);
 static GObject * gazette_constructor (GType type, guint n_construct_properties, GObjectConstructParam * construct_properties);
 gint _vala_main (gchar** args, int args_length1);
 static void _vala_array_destroy (gpointer array, gint array_length, GDestroyNotify destroy_func);
@@ -390,6 +405,9 @@ static void block1_data_unref (void * _userdata_) {
 	if (g_atomic_int_dec_and_test (&_data1_->_ref_count_)) {
 		Gazette * self;
 		self = _data1_->self;
+		_g_object_unref0 (_data1_->randomline4);
+		_g_object_unref0 (_data1_->randomline3);
+		_g_object_unref0 (_data1_->welcome2);
 		_g_object_unref0 (_data1_->randomline2);
 		_g_object_unref0 (_data1_->randomline1);
 		_g_object_unref0 (_data1_->welcome);
@@ -497,6 +515,102 @@ static void ___lambda8__clutter_timeline_completed (ClutterTimeline* _sender, gp
 }
 
 
+static void __lambda11_ (Block1Data* _data1_) {
+	Gazette * self;
+	ShadowedLabel* _tmp0_;
+	self = _data1_->self;
+	_tmp0_ = _data1_->welcome2;
+	clutter_actor_animate ((ClutterActor*) _tmp0_, (gulong) CLUTTER_LINEAR, (guint) 500, "x", 150.0f, "opacity", 0, NULL);
+}
+
+
+static void ___lambda11__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self) {
+	__lambda11_ (self);
+}
+
+
+static void __lambda10_ (Block1Data* _data1_) {
+	Gazette * self;
+	ShadowedLabel* _tmp0_;
+	ClutterAnimation* _tmp1_ = NULL;
+	ClutterTimeline* _tmp2_ = NULL;
+	self = _data1_->self;
+	_tmp0_ = _data1_->welcome2;
+	_tmp1_ = clutter_actor_animate ((ClutterActor*) _tmp0_, (gulong) CLUTTER_LINEAR, (guint) 1000, "x", 200.0f, NULL);
+	_tmp2_ = clutter_animation_get_timeline (_tmp1_);
+	g_signal_connect_data (_tmp2_, "completed", (GCallback) ___lambda11__clutter_timeline_completed, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
+}
+
+
+static void ___lambda10__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self) {
+	__lambda10_ (self);
+}
+
+
+static void __lambda13_ (Block1Data* _data1_) {
+	Gazette * self;
+	ShadowedLabel* _tmp0_;
+	self = _data1_->self;
+	_tmp0_ = _data1_->randomline3;
+	clutter_actor_animate ((ClutterActor*) _tmp0_, (gulong) CLUTTER_EASE_OUT_QUAD, (guint) 1000, "x", 100.0f, "opacity", 0, NULL);
+}
+
+
+static void ___lambda13__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self) {
+	__lambda13_ (self);
+}
+
+
+static void __lambda12_ (Block1Data* _data1_) {
+	Gazette * self;
+	ShadowedLabel* _tmp0_;
+	ClutterAnimation* _tmp1_ = NULL;
+	ClutterTimeline* _tmp2_ = NULL;
+	self = _data1_->self;
+	_tmp0_ = _data1_->randomline3;
+	_tmp1_ = clutter_actor_animate ((ClutterActor*) _tmp0_, (gulong) CLUTTER_LINEAR, (guint) 10, "x", 75.0f, NULL);
+	_tmp2_ = clutter_animation_get_timeline (_tmp1_);
+	g_signal_connect_data (_tmp2_, "completed", (GCallback) ___lambda13__clutter_timeline_completed, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
+}
+
+
+static void ___lambda12__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self) {
+	__lambda12_ (self);
+}
+
+
+static void __lambda15_ (Block1Data* _data1_) {
+	Gazette * self;
+	ShadowedLabel* _tmp0_;
+	self = _data1_->self;
+	_tmp0_ = _data1_->randomline4;
+	clutter_actor_animate ((ClutterActor*) _tmp0_, (gulong) CLUTTER_EASE_OUT_QUAD, (guint) 1000, "x", 600.0f, "opacity", 0, NULL);
+}
+
+
+static void ___lambda15__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self) {
+	__lambda15_ (self);
+}
+
+
+static void __lambda14_ (Block1Data* _data1_) {
+	Gazette * self;
+	ShadowedLabel* _tmp0_;
+	ClutterAnimation* _tmp1_ = NULL;
+	ClutterTimeline* _tmp2_ = NULL;
+	self = _data1_->self;
+	_tmp0_ = _data1_->randomline4;
+	_tmp1_ = clutter_actor_animate ((ClutterActor*) _tmp0_, (gulong) CLUTTER_LINEAR, (guint) 1, "x", 700.0f, NULL);
+	_tmp2_ = clutter_animation_get_timeline (_tmp1_);
+	g_signal_connect_data (_tmp2_, "completed", (GCallback) ___lambda15__clutter_timeline_completed, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
+}
+
+
+static void ___lambda14__clutter_timeline_completed (ClutterTimeline* _sender, gpointer self) {
+	__lambda14_ (self);
+}
+
+
 static gchar** _vala_array_dup2 (gchar** self, int length) {
 	gchar** result;
 	int i;
@@ -510,7 +624,7 @@ static gchar** _vala_array_dup2 (gchar** self, int length) {
 }
 
 
-static gboolean __lambda10_ (Block1Data* _data1_) {
+static gboolean __lambda16_ (Block1Data* _data1_) {
 	Gazette * self;
 	gboolean result = FALSE;
 	GlobalSettings* _tmp0_ = NULL;
@@ -770,7 +884,7 @@ static gboolean __lambda10_ (Block1Data* _data1_) {
 					switch (0) {
 						default:
 						{
-							g_warning ("Gazette.vala:114: Unrecognized service requested!");
+							g_warning ("Gazette.vala:151: Unrecognized service requested!");
 							break;
 						}
 					}
@@ -785,9 +899,9 @@ static gboolean __lambda10_ (Block1Data* _data1_) {
 }
 
 
-static gboolean ___lambda10__gsource_func (gpointer self) {
+static gboolean ___lambda16__gsource_func (gpointer self) {
 	gboolean result;
-	result = __lambda10_ (self);
+	result = __lambda16_ (self);
 	return result;
 }
 
@@ -886,6 +1000,84 @@ static void gazette_real_activate (GApplication* base) {
 	ClutterStage* _tmp87_;
 	ClutterStage* _tmp88_;
 	ShadowedLabel* _tmp89_;
+	const gchar* _tmp90_ = NULL;
+	gchar* _tmp91_ = NULL;
+	gchar* _tmp92_;
+	const gchar* _tmp93_ = NULL;
+	gchar* _tmp94_ = NULL;
+	gchar* _tmp95_;
+	gchar* _tmp96_;
+	gchar* _tmp97_;
+	ShadowedLabel* _tmp98_;
+	ShadowedLabel* _tmp99_;
+	ShadowedLabel* _tmp100_;
+	ShadowedLabel* _tmp101_;
+	ShadowedLabel* _tmp102_;
+	ShadowedLabel* _tmp103_;
+	ClutterAnimation* _tmp104_ = NULL;
+	ClutterTimeline* _tmp105_ = NULL;
+	GazetteWindow* _tmp106_;
+	ClutterStage* _tmp107_;
+	ClutterStage* _tmp108_;
+	ShadowedLabel* _tmp109_;
+	gchar* _tmp110_;
+	gchar* randomlinetext2;
+	const gchar* _tmp111_ = NULL;
+	gchar* _tmp112_ = NULL;
+	gchar* _tmp113_;
+	const gchar* _tmp114_;
+	const gchar* _tmp115_ = NULL;
+	gchar* _tmp116_ = NULL;
+	gchar* _tmp117_;
+	gchar* _tmp118_;
+	gchar* _tmp119_;
+	ShadowedLabel* _tmp120_;
+	ShadowedLabel* _tmp121_;
+	ShadowedLabel* _tmp122_;
+	ShadowedLabel* _tmp123_;
+	ShadowedLabel* _tmp124_;
+	ShadowedLabel* _tmp125_;
+	ShadowedLabel* _tmp126_;
+	gfloat _tmp127_;
+	gfloat _tmp128_;
+	ShadowedLabel* _tmp129_;
+	gfloat _tmp130_;
+	gfloat _tmp131_;
+	ShadowedLabel* _tmp132_;
+	ClutterAnimation* _tmp133_ = NULL;
+	ClutterTimeline* _tmp134_ = NULL;
+	GazetteWindow* _tmp135_;
+	ClutterStage* _tmp136_;
+	ClutterStage* _tmp137_;
+	ShadowedLabel* _tmp138_;
+	const gchar* _tmp139_ = NULL;
+	gchar* _tmp140_ = NULL;
+	gchar* _tmp141_;
+	const gchar* _tmp142_;
+	const gchar* _tmp143_ = NULL;
+	gchar* _tmp144_ = NULL;
+	gchar* _tmp145_;
+	gchar* _tmp146_;
+	gchar* _tmp147_;
+	ShadowedLabel* _tmp148_;
+	ShadowedLabel* _tmp149_;
+	ShadowedLabel* _tmp150_;
+	ShadowedLabel* _tmp151_;
+	ShadowedLabel* _tmp152_;
+	ShadowedLabel* _tmp153_;
+	ShadowedLabel* _tmp154_;
+	gfloat _tmp155_;
+	gfloat _tmp156_;
+	ShadowedLabel* _tmp157_;
+	gfloat _tmp158_;
+	gfloat _tmp159_;
+	ShadowedLabel* _tmp160_;
+	ClutterAnimation* _tmp161_ = NULL;
+	ClutterTimeline* _tmp162_ = NULL;
+	GazetteWindow* _tmp163_;
+	ClutterStage* _tmp164_;
+	ClutterStage* _tmp165_;
+	ShadowedLabel* _tmp166_;
 	self = (Gazette*) base;
 	_data1_ = g_slice_new0 (Block1Data);
 	_data1_->_ref_count_ = 1;
@@ -1026,7 +1218,118 @@ static void gazette_real_activate (GApplication* base) {
 	_tmp88_ = _tmp87_;
 	_tmp89_ = _data1_->randomline2;
 	clutter_actor_add_child ((ClutterActor*) _tmp88_, (ClutterActor*) _tmp89_);
-	g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) 2000, ___lambda10__gsource_func, block1_data_ref (_data1_), block1_data_unref);
+	_tmp90_ = _ (textcolor);
+	_tmp91_ = g_strdup_printf ("<span font='50' face='Raleway' color='%s'", _tmp90_);
+	_tmp92_ = _tmp91_;
+	_tmp93_ = _ ("Gazette is loading...");
+	_tmp94_ = g_strdup_printf (">%s</span>", _tmp93_);
+	_tmp95_ = _tmp94_;
+	_tmp96_ = g_strconcat (_tmp92_, _tmp95_, NULL);
+	_tmp97_ = _tmp96_;
+	_tmp98_ = shadowed_label_new (_tmp97_);
+	g_object_ref_sink (_tmp98_);
+	_tmp99_ = _tmp98_;
+	_g_free0 (_tmp97_);
+	_g_free0 (_tmp95_);
+	_g_free0 (_tmp92_);
+	_data1_->welcome2 = _tmp99_;
+	_tmp100_ = _data1_->welcome2;
+	clutter_actor_set_x ((ClutterActor*) _tmp100_, (gfloat) 50);
+	_tmp101_ = _data1_->welcome2;
+	clutter_actor_set_y ((ClutterActor*) _tmp101_, (gfloat) 300);
+	_tmp102_ = _data1_->welcome2;
+	clutter_actor_set_opacity ((ClutterActor*) _tmp102_, (guint) 0);
+	_tmp103_ = _data1_->welcome2;
+	_tmp104_ = clutter_actor_animate ((ClutterActor*) _tmp103_, (gulong) CLUTTER_LINEAR, (guint) 500, "opacity", 255, "x", 300.0f, NULL);
+	_tmp105_ = clutter_animation_get_timeline (_tmp104_);
+	g_signal_connect_data (_tmp105_, "completed", (GCallback) ___lambda10__clutter_timeline_completed, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
+	_tmp106_ = _data1_->window;
+	_tmp107_ = gazette_window_get_stage (_tmp106_);
+	_tmp108_ = _tmp107_;
+	_tmp109_ = _data1_->welcome2;
+	clutter_actor_add_child ((ClutterActor*) _tmp108_, (ClutterActor*) _tmp109_);
+	_tmp110_ = g_strdup (".......................................");
+	randomlinetext2 = _tmp110_;
+	_tmp111_ = _ (textcolor);
+	_tmp112_ = g_strdup_printf ("<span font='10' face='FreeMono' color='%s'", _tmp111_);
+	_tmp113_ = _tmp112_;
+	_tmp114_ = randomlinetext2;
+	_tmp115_ = _ (_tmp114_);
+	_tmp116_ = g_strdup_printf (">%s</span>", _tmp115_);
+	_tmp117_ = _tmp116_;
+	_tmp118_ = g_strconcat (_tmp113_, _tmp117_, NULL);
+	_tmp119_ = _tmp118_;
+	_tmp120_ = shadowed_label_new (_tmp119_);
+	g_object_ref_sink (_tmp120_);
+	_tmp121_ = _tmp120_;
+	_g_free0 (_tmp119_);
+	_g_free0 (_tmp117_);
+	_g_free0 (_tmp113_);
+	_data1_->randomline3 = _tmp121_;
+	_tmp122_ = _data1_->randomline3;
+	clutter_actor_set_x ((ClutterActor*) _tmp122_, (gfloat) 760);
+	_tmp123_ = _data1_->randomline3;
+	clutter_actor_set_y ((ClutterActor*) _tmp123_, (gfloat) 360);
+	_tmp124_ = _data1_->randomline3;
+	clutter_actor_set_opacity ((ClutterActor*) _tmp124_, (guint) 0);
+	_tmp125_ = _data1_->randomline3;
+	_tmp126_ = _data1_->welcome;
+	_tmp127_ = clutter_actor_get_width ((ClutterActor*) _tmp126_);
+	_tmp128_ = _tmp127_;
+	_tmp129_ = _data1_->randomline1;
+	_tmp130_ = clutter_actor_get_width ((ClutterActor*) _tmp129_);
+	_tmp131_ = _tmp130_;
+	g_object_set ((ClutterActor*) _tmp125_, "scale-x", (gdouble) (_tmp128_ / _tmp131_), NULL);
+	_tmp132_ = _data1_->randomline3;
+	_tmp133_ = clutter_actor_animate ((ClutterActor*) _tmp132_, (gulong) CLUTTER_EASE_IN_QUAD, (guint) 900, "opacity", 255, "x", 50.0f, NULL);
+	_tmp134_ = clutter_animation_get_timeline (_tmp133_);
+	g_signal_connect_data (_tmp134_, "completed", (GCallback) ___lambda12__clutter_timeline_completed, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
+	_tmp135_ = _data1_->window;
+	_tmp136_ = gazette_window_get_stage (_tmp135_);
+	_tmp137_ = _tmp136_;
+	_tmp138_ = _data1_->randomline3;
+	clutter_actor_add_child ((ClutterActor*) _tmp137_, (ClutterActor*) _tmp138_);
+	_tmp139_ = _ (textcolor);
+	_tmp140_ = g_strdup_printf ("<span font='10' face='FreeMono' color='%s'", _tmp139_);
+	_tmp141_ = _tmp140_;
+	_tmp142_ = randomlinetext2;
+	_tmp143_ = _ (_tmp142_);
+	_tmp144_ = g_strdup_printf (">%s</span>", _tmp143_);
+	_tmp145_ = _tmp144_;
+	_tmp146_ = g_strconcat (_tmp141_, _tmp145_, NULL);
+	_tmp147_ = _tmp146_;
+	_tmp148_ = shadowed_label_new (_tmp147_);
+	g_object_ref_sink (_tmp148_);
+	_tmp149_ = _tmp148_;
+	_g_free0 (_tmp147_);
+	_g_free0 (_tmp145_);
+	_g_free0 (_tmp141_);
+	_data1_->randomline4 = _tmp149_;
+	_tmp150_ = _data1_->randomline4;
+	clutter_actor_set_x ((ClutterActor*) _tmp150_, (gfloat) 50);
+	_tmp151_ = _data1_->randomline4;
+	clutter_actor_set_y ((ClutterActor*) _tmp151_, (gfloat) 295);
+	_tmp152_ = _data1_->randomline4;
+	clutter_actor_set_opacity ((ClutterActor*) _tmp152_, (guint) 0);
+	_tmp153_ = _data1_->randomline4;
+	_tmp154_ = _data1_->welcome;
+	_tmp155_ = clutter_actor_get_width ((ClutterActor*) _tmp154_);
+	_tmp156_ = _tmp155_;
+	_tmp157_ = _data1_->randomline2;
+	_tmp158_ = clutter_actor_get_width ((ClutterActor*) _tmp157_);
+	_tmp159_ = _tmp158_;
+	g_object_set ((ClutterActor*) _tmp153_, "scale-x", (gdouble) (_tmp156_ / _tmp159_), NULL);
+	_tmp160_ = _data1_->randomline4;
+	_tmp161_ = clutter_actor_animate ((ClutterActor*) _tmp160_, (gulong) CLUTTER_EASE_IN_QUAD, (guint) 700, "opacity", 255, "x", 760.0f, NULL);
+	_tmp162_ = clutter_animation_get_timeline (_tmp161_);
+	g_signal_connect_data (_tmp162_, "completed", (GCallback) ___lambda14__clutter_timeline_completed, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
+	_tmp163_ = _data1_->window;
+	_tmp164_ = gazette_window_get_stage (_tmp163_);
+	_tmp165_ = _tmp164_;
+	_tmp166_ = _data1_->randomline4;
+	clutter_actor_add_child ((ClutterActor*) _tmp165_, (ClutterActor*) _tmp166_);
+	g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) 2000, ___lambda16__gsource_func, block1_data_ref (_data1_), block1_data_unref);
+	_g_free0 (randomlinetext2);
 	_g_free0 (randomlinetext);
 	block1_data_unref (_data1_);
 	_data1_ = NULL;

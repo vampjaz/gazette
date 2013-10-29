@@ -71,9 +71,6 @@ struct _WeatherPrivate {
 	gchar** condition_texts;
 	gint condition_texts_length1;
 	gint _condition_texts_size_;
-	gchar** day_texts;
-	gint day_texts_length1;
-	gint _day_texts_size_;
 	gchar* unit;
 	gchar* text;
 	SoupSessionAsync* session;
@@ -96,9 +93,9 @@ enum  {
 Weather* weather_new (void);
 Weather* weather_construct (GType object_type);
 Service* service_construct (GType object_type, const gchar* _id);
-static void __lambda12_ (Weather* self, const gchar* key);
+static void __lambda18_ (Weather* self, const gchar* key);
 gboolean service_update (Service* self);
-static void ___lambda12__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self);
+static void ___lambda18__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self);
 ShadowedLabel* shadowed_label_new (const gchar* _label);
 ShadowedLabel* shadowed_label_construct (GType object_type, const gchar* _label);
 ShadowedLabel* service_get_reload_label (Service* self, const gchar* service_name);
@@ -108,24 +105,24 @@ static void weather_real_create (Service* base);
 gchar** weather_get_attributes (Weather* self, const gchar* data, const gchar* tagname, gchar** attrs, int attrs_length1, gint offset, int* result_length1);
 gchar* weather_get_attribute_value (Weather* self, const gchar* data, const gchar* attr);
 static gboolean weather_real_update (Service* base);
-#define textcolor "blue"
+#define textcolor "black"
 void shadowed_label_set_label (ShadowedLabel* self, const gchar* value);
-static void __lambda13_ (Weather* self, SoupSession* session, SoupMessage* m);
-static void ___lambda13__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self);
+static void __lambda19_ (Weather* self, SoupSession* session, SoupMessage* m);
+static void ___lambda19__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self);
 static void weather_finalize (GObject* obj);
 static void _vala_array_destroy (gpointer array, gint array_length, GDestroyNotify destroy_func);
 static void _vala_array_free (gpointer array, gint array_length, GDestroyNotify destroy_func);
 
 const gchar* condition_codes[49] = {"c", "0", "c", "1", "1", "2", "3", "2", "e", "3", "7", "3", "3", "6", "G", "#", "h", "7", "7", "f", "f", "f", "M", "c", "S", "h", "N", "4", "3", "K", "J", "C", "B", "2", "B", "X", "1", "1", "1", "1", "e", "#", "2", "#", "H", "1", "2", "1", ")"};
 
-static void __lambda12_ (Weather* self, const gchar* key) {
+static void __lambda18_ (Weather* self, const gchar* key) {
 	g_return_if_fail (key != NULL);
 	service_update ((Service*) self);
 }
 
 
-static void ___lambda12__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self) {
-	__lambda12_ (self, key);
+static void ___lambda18__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self) {
+	__lambda18_ (self, key);
 }
 
 
@@ -154,7 +151,7 @@ Weather* weather_construct (GType object_type) {
 	_g_object_unref0 (self->priv->settings);
 	self->priv->settings = _tmp0_;
 	_tmp1_ = self->priv->settings;
-	g_signal_connect_object (_tmp1_, "changed", (GCallback) ___lambda12__g_settings_changed, self, 0);
+	g_signal_connect_object (_tmp1_, "changed", (GCallback) ___lambda18__g_settings_changed, self, 0);
 	_tmp2_ = shadowed_label_new ("");
 	g_object_ref_sink (_tmp2_);
 	_g_object_unref0 (self->priv->label);
@@ -489,7 +486,7 @@ static gpointer _g_object_ref0 (gpointer self) {
 }
 
 
-static void __lambda13_ (Weather* self, SoupSession* session, SoupMessage* m) {
+static void __lambda19_ (Weather* self, SoupSession* session, SoupMessage* m) {
 	SoupMessage* _tmp0_;
 	SoupMessageBody* _tmp1_;
 	guint8* _tmp2_;
@@ -1105,8 +1102,8 @@ static void __lambda13_ (Weather* self, SoupSession* session, SoupMessage* m) {
 }
 
 
-static void ___lambda13__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self) {
-	__lambda13_ (self, session, msg);
+static void ___lambda19__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self) {
+	__lambda19_ (self, session, msg);
 }
 
 
@@ -1219,7 +1216,7 @@ static gboolean weather_real_update (Service* base) {
 	_tmp36_ = self->priv->session;
 	_tmp37_ = self->priv->message;
 	_tmp38_ = _g_object_ref0 (_tmp37_);
-	soup_session_queue_message ((SoupSession*) _tmp36_, _tmp38_, ___lambda13__soup_session_callback, self);
+	soup_session_queue_message ((SoupSession*) _tmp36_, _tmp38_, ___lambda19__soup_session_callback, self);
 	result = TRUE;
 	_g_free0 (url);
 	_g_free0 (id);
@@ -1336,21 +1333,6 @@ static void weather_instance_init (Weather * self) {
 	const gchar* _tmp96_ = NULL;
 	gchar* _tmp97_;
 	gchar** _tmp98_ = NULL;
-	const gchar* _tmp99_ = NULL;
-	gchar* _tmp100_;
-	const gchar* _tmp101_ = NULL;
-	gchar* _tmp102_;
-	const gchar* _tmp103_ = NULL;
-	gchar* _tmp104_;
-	const gchar* _tmp105_ = NULL;
-	gchar* _tmp106_;
-	const gchar* _tmp107_ = NULL;
-	gchar* _tmp108_;
-	const gchar* _tmp109_ = NULL;
-	gchar* _tmp110_;
-	const gchar* _tmp111_ = NULL;
-	gchar* _tmp112_;
-	gchar** _tmp113_ = NULL;
 	self->priv = WEATHER_GET_PRIVATE (self);
 	_tmp0_ = _ ("Tornado");
 	_tmp1_ = g_strdup (_tmp0_);
@@ -1503,31 +1485,6 @@ static void weather_instance_init (Weather * self) {
 	self->priv->condition_texts = _tmp98_;
 	self->priv->condition_texts_length1 = 49;
 	self->priv->_condition_texts_size_ = self->priv->condition_texts_length1;
-	_tmp99_ = _ ("Mon");
-	_tmp100_ = g_strdup (_tmp99_);
-	_tmp101_ = _ ("Tue");
-	_tmp102_ = g_strdup (_tmp101_);
-	_tmp103_ = _ ("Wed");
-	_tmp104_ = g_strdup (_tmp103_);
-	_tmp105_ = _ ("Thu");
-	_tmp106_ = g_strdup (_tmp105_);
-	_tmp107_ = _ ("Fri");
-	_tmp108_ = g_strdup (_tmp107_);
-	_tmp109_ = _ ("Sat");
-	_tmp110_ = g_strdup (_tmp109_);
-	_tmp111_ = _ ("Sun");
-	_tmp112_ = g_strdup (_tmp111_);
-	_tmp113_ = g_new0 (gchar*, 7 + 1);
-	_tmp113_[0] = _tmp100_;
-	_tmp113_[1] = _tmp102_;
-	_tmp113_[2] = _tmp104_;
-	_tmp113_[3] = _tmp106_;
-	_tmp113_[4] = _tmp108_;
-	_tmp113_[5] = _tmp110_;
-	_tmp113_[6] = _tmp112_;
-	self->priv->day_texts = _tmp113_;
-	self->priv->day_texts_length1 = 7;
-	self->priv->_day_texts_size_ = self->priv->day_texts_length1;
 }
 
 
@@ -1535,7 +1492,6 @@ static void weather_finalize (GObject* obj) {
 	Weather * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, TYPE_WEATHER, Weather);
 	self->priv->condition_texts = (_vala_array_free (self->priv->condition_texts, self->priv->condition_texts_length1, (GDestroyNotify) g_free), NULL);
-	self->priv->day_texts = (_vala_array_free (self->priv->day_texts, self->priv->day_texts_length1, (GDestroyNotify) g_free), NULL);
 	_g_free0 (self->priv->unit);
 	_g_free0 (self->priv->text);
 	_g_object_unref0 (self->priv->session);

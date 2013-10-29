@@ -1,5 +1,7 @@
 using Clutter;
 
+const string textcolor = "black";
+
 public class GlobalSettings : Granite.Services.Settings
 {
 	public string[] services_enabled { get; set; }
@@ -44,7 +46,7 @@ public class Gazette : Granite.Application
 		var size = window.reposition ();
 		window.show_all ();
 
-		var welcome = new ShadowedLabel("<span font='50' face='Raleway' color='red'>%s</span>".printf (_("Welcome") + ", " + Environment.get_real_name ()));
+		var welcome = new ShadowedLabel("<span font='50' face='Raleway' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_("Welcome") + ", " + Environment.get_real_name ()));
 		welcome.x = 50;
 		welcome.y = 200;
 		welcome.opacity = 0;
@@ -55,7 +57,7 @@ public class Gazette : Granite.Application
 		});
 		window.stage.add_child (welcome);
 var randomlinetext = "______________________________________";
-        var randomline1 = new ShadowedLabel("<span font='10' face='FreeMono' color='red'>%s</span>".printf (_(randomlinetext)));
+        var randomline1 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext)));
 		randomline1.x = 760;
 		randomline1.y = 260;
 		randomline1.opacity = 0;
@@ -67,7 +69,7 @@ var randomlinetext = "______________________________________";
 		});
 
 		window.stage.add_child (randomline1);
-        var randomline2 = new ShadowedLabel("<span font='10' face='FreeMono' color='red'>%s</span>".printf (_(randomlinetext)));
+        var randomline2 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext)));
 		randomline2.x = 50;
 		randomline2.y = 195;
 		randomline2.opacity = 0;
@@ -78,6 +80,43 @@ var randomlinetext = "______________________________________";
 			});
 		});
 		window.stage.add_child (randomline2);
+
+		// gazette is loading...
+
+		var welcome2 = new ShadowedLabel("<span font='50' face='Raleway' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_("Gazette is loading...")));
+		welcome2.x = 50;
+		welcome2.y = 300;
+		welcome2.opacity = 0;
+		welcome2.animate (AnimationMode.LINEAR, 500, opacity : 255, x : 250.0f).get_timeline ().completed.connect (() => {
+			welcome2.animate (AnimationMode.LINEAR, 1000, x : 200.0f).get_timeline ().completed.connect (() => {
+				welcome2.animate (AnimationMode.LINEAR, 500, x : 100.0f, opacity : 0);
+			});
+		});
+		window.stage.add_child (welcome2);
+var randomlinetext2 = ".......................................";
+        var randomline3 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext2)));
+		randomline3.x = 760;
+		randomline3.y = 360;
+		randomline3.opacity = 0;
+        randomline3.scale_x= welcome.width / ( randomline1.width );
+		randomline3.animate (AnimationMode.EASE_IN_QUAD, 900, opacity : 255, x : 50.0f ).get_timeline ().completed.connect (() => {
+			randomline3.animate (AnimationMode.LINEAR, 10, x : 75.0f).get_timeline ().completed.connect (() => {
+				randomline3.animate (AnimationMode.EASE_OUT_QUAD, 1000, x : 100.0f, opacity : 0);
+			});
+		});
+
+		window.stage.add_child (randomline3);
+        var randomline4 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext2)));
+		randomline4.x = 50;
+		randomline4.y = 295;
+		randomline4.opacity = 0;
+        randomline4.scale_x= welcome.width / ( randomline2.width );
+		randomline4.animate (AnimationMode.EASE_IN_QUAD, 700, opacity : 255, x : 760.0f ).get_timeline ().completed.connect (() => {
+			randomline4.animate (AnimationMode.LINEAR, 1, x : 700.0f).get_timeline ().completed.connect (() => {
+				randomline4.animate (AnimationMode.EASE_OUT_QUAD, 1000, x : 600.0f, opacity : 0);
+			});
+		});
+		window.stage.add_child (randomline4);
 
 		//var calendar = new Calendar();
 

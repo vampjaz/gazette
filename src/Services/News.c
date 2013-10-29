@@ -111,22 +111,22 @@ Service* service_construct (GType object_type, const gchar* _id);
 ShadowedLabel* service_get_reload_label (Service* self, const gchar* service_name);
 ShadowedLabel* shadowed_label_new (const gchar* _label);
 ShadowedLabel* shadowed_label_construct (GType object_type, const gchar* _label);
-static gboolean __lambda14_ (News* self, ClutterButtonEvent* e);
+static gboolean __lambda20_ (News* self, ClutterButtonEvent* e);
 static void _g_free0_ (gpointer var);
 static void _g_list_free__g_free0_ (GList* self);
-static gboolean ___lambda14__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self);
-static void __lambda15_ (News* self, const gchar* key);
+static gboolean ___lambda20__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self);
+static void __lambda21_ (News* self, const gchar* key);
 gboolean service_update (Service* self);
-static void ___lambda15__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self);
+static void ___lambda21__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self);
 gboolean service_load (Service* self);
 static gboolean _service_update_gsource_func (gpointer self);
-#define textcolor "blue"
+#define textcolor "black"
 static void news_real_create (Service* base);
 static gboolean news_real_update (Service* base);
 void shadowed_label_set_label (ShadowedLabel* self, const gchar* value);
-static void __lambda16_ (News* self, SoupSession* session, SoupMessage* m);
+static void __lambda22_ (News* self, SoupSession* session, SoupMessage* m);
 gchar* service_ellipsize (const gchar* s, gint max_length);
-static void ___lambda16__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self);
+static void ___lambda22__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self);
 static void news_finalize (GObject* obj);
 
 
@@ -152,7 +152,7 @@ static void _g_list_free__g_free0_ (GList* self) {
 }
 
 
-static gboolean __lambda14_ (News* self, ClutterButtonEvent* e) {
+static gboolean __lambda20_ (News* self, ClutterButtonEvent* e) {
 	gboolean result = FALSE;
 	gfloat root_x = 0.0F;
 	gfloat root_y = 0.0F;
@@ -233,14 +233,14 @@ static gboolean __lambda14_ (News* self, ClutterButtonEvent* e) {
 }
 
 
-static gboolean ___lambda14__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self) {
+static gboolean ___lambda20__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self) {
 	gboolean result;
-	result = __lambda14_ (self, event);
+	result = __lambda20_ (self, event);
 	return result;
 }
 
 
-static void __lambda15_ (News* self, const gchar* key) {
+static void __lambda21_ (News* self, const gchar* key) {
 	const gchar* _tmp0_;
 	g_return_if_fail (key != NULL);
 	_tmp0_ = key;
@@ -250,8 +250,8 @@ static void __lambda15_ (News* self, const gchar* key) {
 }
 
 
-static void ___lambda15__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self) {
-	__lambda15_ (self, key);
+static void ___lambda21__g_settings_changed (GSettings* _sender, const gchar* key, gpointer self) {
+	__lambda21_ (self, key);
 }
 
 
@@ -317,12 +317,12 @@ News* news_construct (GType object_type) {
 	_tmp5_ = self->priv->label_list;
 	clutter_actor_set_reactive ((ClutterActor*) _tmp5_, TRUE);
 	_tmp6_ = self->priv->label_list;
-	g_signal_connect_object ((ClutterActor*) _tmp6_, "button-release-event", (GCallback) ___lambda14__clutter_actor_button_release_event, self, 0);
+	g_signal_connect_object ((ClutterActor*) _tmp6_, "button-release-event", (GCallback) ___lambda20__clutter_actor_button_release_event, self, 0);
 	_tmp7_ = g_settings_new ("org.pantheon.gazette.news");
 	_g_object_unref0 (self->priv->settings);
 	self->priv->settings = _tmp7_;
 	_tmp8_ = self->priv->settings;
-	g_signal_connect_object (_tmp8_, "changed", (GCallback) ___lambda15__g_settings_changed, self, 0);
+	g_signal_connect_object (_tmp8_, "changed", (GCallback) ___lambda21__g_settings_changed, self, 0);
 	_tmp9_ = (SoupSessionAsync*) soup_session_async_new ();
 	_g_object_unref0 (self->priv->session);
 	self->priv->session = (SoupSession*) _tmp9_;
@@ -517,7 +517,7 @@ static gchar* string_substring (const gchar* self, glong offset, glong len) {
 }
 
 
-static void __lambda16_ (News* self, SoupSession* session, SoupMessage* m) {
+static void __lambda22_ (News* self, SoupSession* session, SoupMessage* m) {
 	SoupMessage* _tmp0_;
 	SoupMessageBody* _tmp1_;
 	guint8* _tmp2_;
@@ -729,8 +729,8 @@ static void __lambda16_ (News* self, SoupSession* session, SoupMessage* m) {
 }
 
 
-static void ___lambda16__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self) {
-	__lambda16_ (self, session, msg);
+static void ___lambda22__soup_session_callback (SoupSession* session, SoupMessage* msg, gpointer self) {
+	__lambda22_ (self, session, msg);
 }
 
 
@@ -791,7 +791,7 @@ static gboolean news_real_update (Service* base) {
 	_tmp17_ = self->priv->session;
 	_tmp18_ = self->priv->message;
 	_tmp19_ = _g_object_ref0 (_tmp18_);
-	soup_session_queue_message (_tmp17_, _tmp19_, ___lambda16__soup_session_callback, self);
+	soup_session_queue_message (_tmp17_, _tmp19_, ___lambda22__soup_session_callback, self);
 	result = TRUE;
 	_g_free0 (soup_url);
 	return result;

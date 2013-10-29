@@ -81,6 +81,43 @@ var randomlinetext = "______________________________________";
 		});
 		window.stage.add_child (randomline2);
 
+		// gazette is loading...
+
+		var welcome2 = new ShadowedLabel("<span font='50' face='Raleway' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_("Gazette is loading...")));
+		welcome2.x = 50;
+		welcome2.y = 300;
+		welcome2.opacity = 0;
+		welcome2.animate (AnimationMode.LINEAR, 500, opacity : 255, x : 300.0f).get_timeline ().completed.connect (() => {
+			welcome2.animate (AnimationMode.LINEAR, 1000, x : 200.0f).get_timeline ().completed.connect (() => {
+				welcome2.animate (AnimationMode.LINEAR, 500, x : 150.0f, opacity : 0);
+			});
+		});
+		window.stage.add_child (welcome2);
+var randomlinetext2 = ".......................................";
+        var randomline3 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext2)));
+		randomline3.x = 760;
+		randomline3.y = 360;
+		randomline3.opacity = 0;
+        randomline3.scale_x= welcome.width / ( randomline1.width );
+		randomline3.animate (AnimationMode.EASE_IN_QUAD, 900, opacity : 255, x : 50.0f ).get_timeline ().completed.connect (() => {
+			randomline3.animate (AnimationMode.LINEAR, 10, x : 75.0f).get_timeline ().completed.connect (() => {
+				randomline3.animate (AnimationMode.EASE_OUT_QUAD, 1000, x : 100.0f, opacity : 0);
+			});
+		});
+
+		window.stage.add_child (randomline3);
+        var randomline4 = new ShadowedLabel("<span font='10' face='FreeMono' color='%s'".printf (_(textcolor)) + ">%s</span>".printf (_(randomlinetext2)));
+		randomline4.x = 50;
+		randomline4.y = 295;
+		randomline4.opacity = 0;
+        randomline4.scale_x= welcome.width / ( randomline2.width );
+		randomline4.animate (AnimationMode.EASE_IN_QUAD, 700, opacity : 255, x : 760.0f ).get_timeline ().completed.connect (() => {
+			randomline4.animate (AnimationMode.LINEAR, 1, x : 700.0f).get_timeline ().completed.connect (() => {
+				randomline4.animate (AnimationMode.EASE_OUT_QUAD, 1000, x : 600.0f, opacity : 0);
+			});
+		});
+		window.stage.add_child (randomline4);
+
 		//var calendar = new Calendar();
 
         Timeout.add(2000, () => {

@@ -95,13 +95,13 @@ Files* files_construct (GType object_type);
 Service* service_construct (GType object_type, const gchar* _id);
 gboolean service_load (Service* self);
 static void files_real_create (Service* base);
-#define textcolor "blue"
+#define textcolor "black"
 ShadowedLabel* shadowed_label_new (const gchar* _label);
 ShadowedLabel* shadowed_label_construct (GType object_type, const gchar* _label);
-static gboolean __lambda11_ (Files* self, ClutterButtonEvent* e);
+static gboolean __lambda17_ (Files* self, ClutterButtonEvent* e);
 static void _g_object_unref0_ (gpointer var);
 static void _g_list_free__g_object_unref0_ (GList* self);
-static gboolean ___lambda11__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self);
+static gboolean ___lambda17__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self);
 gboolean service_update (Service* self);
 static gboolean _service_update_gsource_func (gpointer self);
 static gboolean files_real_update (Service* base);
@@ -160,7 +160,7 @@ static void _g_list_free__g_object_unref0_ (GList* self) {
 }
 
 
-static gboolean __lambda11_ (Files* self, ClutterButtonEvent* e) {
+static gboolean __lambda17_ (Files* self, ClutterButtonEvent* e) {
 	gboolean result = FALSE;
 	gfloat root_x = 0.0F;
 	gfloat root_y = 0.0F;
@@ -241,9 +241,9 @@ static gboolean __lambda11_ (Files* self, ClutterButtonEvent* e) {
 }
 
 
-static gboolean ___lambda11__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self) {
+static gboolean ___lambda17__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self) {
 	gboolean result;
-	result = __lambda11_ (self, event);
+	result = __lambda17_ (self, event);
 	return result;
 }
 
@@ -307,7 +307,7 @@ static void files_real_create (Service* base) {
 	_tmp15_ = self->priv->files_list;
 	clutter_actor_add_child ((ClutterActor*) self, (ClutterActor*) _tmp15_);
 	_tmp16_ = self->priv->files_list;
-	g_signal_connect_object ((ClutterActor*) _tmp16_, "button-release-event", (GCallback) ___lambda11__clutter_actor_button_release_event, self, 0);
+	g_signal_connect_object ((ClutterActor*) _tmp16_, "button-release-event", (GCallback) ___lambda17__clutter_actor_button_release_event, self, 0);
 	_tmp17_ = self->priv->settings;
 	_tmp18_ = g_settings_get_int (_tmp17_, "update-interval");
 	g_timeout_add_full (G_PRIORITY_DEFAULT, (guint) _tmp18_, _service_update_gsource_func, g_object_ref ((Service*) self), g_object_unref);

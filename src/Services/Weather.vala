@@ -105,15 +105,15 @@ public class Weather : Service
 	        _("Not available") // not available )
     };
 
-    string [] day_texts = {
+ /*   string [] day_texts = {
     		_("Mon"),
     		_("Tue"),
     		_("Wed"),
     		_("Thu"),
     		_("Fri"),
     		_("Sat"),
-    		_("Sun")
-    };
+    		_("Sun") 
+    };    */
 
 	string unit;
 	string text;
