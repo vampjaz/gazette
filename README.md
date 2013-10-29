@@ -5,12 +5,12 @@ A fork of the gazette newsreader for elementaryOS
 
 Forked from https://launchpad.net/gazette
 
-This branch has a black color scheme in stead of a white one.
+This branch has a default black color scheme in stead of a white one.
 
 How to compile:
 ===============
 
-In the terminal, navigate to your desired folder (anywhere you have write access), then type or copy this and run in the terminal:
+In the terminal, navigate to your desired folder (anywhere you have write access, try typing `cd ~`), then type or copy this and run in the terminal:
 
     # install dependencies  
     sudo apt-get install git cmake valac libclutter-1.0-dev libclutter-gtk-1.0-dev libzeitgeist-dev libgoa-1.0-dev libgoa-1.0-0 libsoup2.4-dev libgdata-dev
