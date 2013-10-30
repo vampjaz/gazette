@@ -26,14 +26,14 @@ In the terminal, navigate to your desired folder (anywhere you have write access
 
 To change the text color, open whatever-folder-gazette-was-downloaded-in/gazette/src/Gazette.vala in a text editor. The third line should say:
 
-    constant string textcolor = "whatever color you want the text to be";
+    const string textcolor = "whatever color you want the text to be";
 Then save the file.
 The color can be a common name (blue, red, black, etc...) or any HTML allowed color. To set the color once it has been changed, run these commands in the terminal:
 
     # if gazette is running, kill it:
     killall gazette
 
-    # now recompile and reinstall
+    # now recompile and reinstall (do this in the gazette folder you downloaded):
     cmake ./ && make && sudo make install
 
     # now relaunch in the background:
