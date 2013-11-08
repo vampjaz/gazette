@@ -13,7 +13,8 @@ How to compile:
 In the terminal, navigate to your desired folder (anywhere you have write access, try typing `cd ~`), then type or copy this and run in the terminal:
 
     # install dependencies  
-    sudo apt-get install git cmake valac libclutter-1.0-dev libclutter-gtk-1.0-dev libzeitgeist-dev libgoa-1.0-dev libgoa-1.0-0 libsoup2.4-dev libgdata-dev
+    sudo apt-get install git cmake valac libclutter-1.0-dev libclutter-gtk-1.0-dev libzeitgeist-dev libgoa-1.0-dev libgoa-1.0-0 libsoup2.4-dev libgdata-dev libpantheon-dev libgranite-dev libgtk-3-0
+
     # get the code
     git clone https://github.com/red-green/gazette.git -b Color-schemes
     cd gazette
