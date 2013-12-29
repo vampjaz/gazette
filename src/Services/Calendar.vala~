@@ -64,9 +64,9 @@ public class Calendar : Service
 
 	public override void create ()
 	{
-		var label = new ShadowedLabel ("<span color='" + textcolor + "' face='wallstate' font='42'>i</span>"+
-				"<span color='" + textcolor + "' face='Raleway' weight='100' font='72'> " + time + " </span>\n" +
-				"<span color='" + textcolor + "' face='Open Sans Light' font='24'> " + current_event.title + place + " </span>");
+		var label = new ShadowedLabel ("<span face='wallstate' font='42'>i</span>"+
+				"<span face='Raleway' weight='100' font='72'> " + time + " </span>\n" +
+				"<span face='Open Sans Light' font='24'> " + current_event.title + place + " </span>");
 		add_child (label);
 	}
     public override bool update () {

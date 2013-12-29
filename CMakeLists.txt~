@@ -43,7 +43,6 @@ include(ValaPrecompile)
 vala_precompile(VALA_C
     src/Gazette.vala
 	src/Services/Files.vala
-	src/Services/Launcher.vala
 	src/Services/Service.vala
 	src/Services/News.vala
 	src/Services/Weather.vala
