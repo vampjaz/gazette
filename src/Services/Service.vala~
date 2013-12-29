@@ -113,7 +113,7 @@ public abstract class Service : Clutter.Actor
 		return false;
     }
     public ShadowedLabel get_reload_label(string service_name) {
-		var reload = new ShadowedLabel("<span color='" + textcolor + "' face='Open Sans Light' font='16'>" + _("Could not retrieve ") + service_name + ",\n" + _("click here to try again") + ".</span>");
+		var reload = new ShadowedLabel("<span face='Open Sans Light' font='16'>" + _("Could not retrieve ") + service_name + ",\n" + _("click here to try again") + ".</span>");
 		reload.reactive = true;
 		reload.button_release_event.connect(update);
 		return reload;

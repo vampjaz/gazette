@@ -38,7 +38,7 @@ public class News : Service
 		session = new Soup.SessionAsync ();
         load();
 	    Timeout.add(settings.get_int("update-interval"), update);
-		var label = new ShadowedLabel ("<span color='" + textcolor + "' font='20' face='Raleway'>%s</span>".printf (_("News")));
+		var label = new ShadowedLabel ("<span font='20' face='Raleway'>%s</span>".printf (_("News")));
 		label_list.y = label.height + 12;
 		label_list.x = 12;
         reload.y = label_list.y;
@@ -57,7 +57,7 @@ public class News : Service
 	    reload.hide();
 	    label_list.reactive = false;
 	    label_list.show();
-	    label_list.label = "<span color='" + textcolor + "' face='Open Sans Light' font='16'>" + _("Loading news,\nplease wait.") + "</span>";
+	    label_list.label = "<span face='Open Sans Light' font='16'>" + _("Loading news,\nplease wait.") + "</span>";
         var soup_url = settings.get_string ("rss-url");
 		message = new Soup.Message ("GET", soup_url);
 	    session.queue_message (message, (session, m) => 
@@ -77,7 +77,7 @@ public class News : Service
 			    var url = output.substring (offset, output.index_of ("</link>", offset) - offset);
 			    news[i] = {ellipsize(title, 40), url};
 		    }
-		    var list = "<span color='" + textcolor + "' font='12' face='Open Sans'>";
+		    var list = "<span font='12' face='Open Sans'>";
 		    for (var i = 0; i < news.length; i++) {
 			    list += news[i].title + "\n";
 		    }
