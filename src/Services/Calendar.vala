@@ -1,5 +1,39 @@
 public class Calendar : Service
 {
+
+	//ShadowedLabel label;
+
+	public Calendar ()
+	{
+		base ("calendar");
+		
+		load();
+	}
+
+	public override void create ()
+	{
+		var label = new ShadowedLabel ("<span color='" + textcolor + "' face='Raleway' font='20'>Calendar</span>");
+		var content = new ShadowedLabel ("<span color='" + textcolor + "' face='Raleway' font='19'> " + "	January	" + " </span>\n" +
+				"<span color='" + textcolor + "' face='Freemono' font='13'>S  M  T  W  T  F  S </span>\n" + 
+				"<span color='" + textcolor + "' face='Freemono' font='13'>" + "   1  2  3  4  5 	 6\n7  8  9 ..." + "</span>");
+				
+		label.x = 0;
+		label.y = 0;
+		content.x = 2;
+		content.y = label.height + 12;
+		
+		add_child (label);
+		add_child (content);
+	}
+    public override bool update () {
+        //TODO	
+        return true;
+    }
+}
+
+
+/* public class Calendar : Service
+{
 	GData.CalendarService service;
 	GData.CalendarEvent current_event = null;
 
@@ -73,4 +107,4 @@ public class Calendar : Service
         //TODO	
         return true;
     }
-}
+} */

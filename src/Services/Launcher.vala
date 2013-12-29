@@ -1,5 +1,5 @@
 const string apps_string = "Chrome\nFiles\nTerminal\nText Editor\nProcessing\nPython\nArduino";
-const string[] apps_term = {"chromium-browser","pantheon-files","x-terminal-emulator","gedit","/home/jackson/Programming/processing-2.0.3/processing","idle","/home/jackson/Programming/arduino-1.0.5/arduino"};
+const string[] apps_term = {"chromium-browser","pantheon-files","x-terminal-emulator","gedit","~/Programming/processing-2.0.3/processing","idle","~/Programming/arduino-1.5.5/arduino"};
 
 public class Launcher : Service 
 {
@@ -38,14 +38,7 @@ public class Launcher : Service
 	}
 	public override bool update ()
 	{
-	  /*  debug("Updating Recent Files");
-	    files_list.reactive = false;
-		var res = "<span color='" + textcolor + "' font='12' face='Open Sans'>";
-		for (var i = 0; i < 10 && i < last_files.length (); i++) {
-			res += ellipsize (last_files.nth_data (i).get_display_name (), 40) + "\n";
-		}
-		files_list.label = res + "</span>";
-		files_list.reactive = true; */
+	  
 		return true;  
 	}
 }

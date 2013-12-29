@@ -100,7 +100,7 @@ static gboolean __lambda17_ (Block2Data* _data2_, ClutterButtonEvent* e);
 static gboolean ___lambda17__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self);
 static gboolean launcher_real_update (Service* base);
 
-const gchar* apps_term[7] = {"chromium-browser", "pantheon-files", "x-terminal-emulator", "gedit", "/home/jackson/Programming/processing-2.0.3/processing", "idle", "/home/jackson/Programming/arduino-1.0.5/arduino"};
+const gchar* apps_term[7] = {"chromium-browser", "pantheon-files", "x-terminal-emulator", "gedit", "/home/jackson/Programming/processing-2.0.3/processing", "idle", "/home/jackson/Programming/arduino-1.5.5/arduino"};
 
 Launcher* launcher_construct (GType object_type) {
 	Launcher * self = NULL;

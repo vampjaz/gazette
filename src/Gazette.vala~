@@ -1,6 +1,6 @@
 using Clutter;
 
-const string testcolor = "black";
+const string textcolor = "black";
 
 public class GlobalSettings : Granite.Services.Settings
 {
@@ -81,7 +81,8 @@ var randomlinetext = "______________________________________";
 		});
 		window.stage.add_child (randomline2);
 
-		//var calendar = new Calendar();
+//    SETUP APPS:
+		
 var x= 0;
 var y = 0;
         Timeout.add(2000, () => {
@@ -98,20 +99,24 @@ var y = 0;
 		   
 		var news = new News ();
 		    news.x = x > 0 ? x : size[0] - MARGIN - 340;
-		news.y = y > 0 ? y : MARGIN + 560;
-		window.stage.add_child (news);
+		    news.y = y > 0 ? y : MARGIN + 560;
+		    window.stage.add_child (news);
 		
 		var apps = new Launcher ();
-		apps.x = MARGIN;
-		apps.y = MARGIN;
-		window.stage.add_child (apps);
-					  
-		    //calendar.create ();
-		    //calendar.x = size[0] - MARGIN - 340;
-		    //calendar.y = MARGIN + 750;
-		    //calendar.display ();
-		    //window.stage.add_child (calendar);
-			return false;
+		    apps.x = MARGIN;
+		    apps.y = MARGIN;
+		    window.stage.add_child (apps);
+					
+		var calendar = new Calendar ();  
+	        //calendar.create ();
+	       // calendar.x = size[0] - MARGIN - 340;
+	       // calendar.y = MARGIN + 750;
+	        calendar.x = MARGIN;
+	        calendar.y = MARGIN * 2 + apps.height;
+	        calendar.display ();
+	        window.stage.add_child (calendar);
+			
+		return false;
         });
 	}
 

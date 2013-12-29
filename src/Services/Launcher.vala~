@@ -1,5 +1,5 @@
-const string apps_string = "Chrome\nFiles\nTerminal\nProcessing\nPython\nArduino";
-const string[] apps_term = {"chromium-browser","pantheon-files","x-terminal-emulator","/home/jackson/Programming/processing-2.0.3/processing","idle","/home/jackson/Programming/arduino-1.0.5/arduino"};
+const string apps_string = "Chrome\nFiles\nTerminal\nText Editor\nProcessing\nPython\nArduino";
+const string[] apps_term = {"chromium-browser","pantheon-files","x-terminal-emulator","gedit","~/Programming/processing-2.0.3/processing","idle","~/Programming/arduino-1.5.5/arduino"};
 
 public class Launcher : Service 
 {
