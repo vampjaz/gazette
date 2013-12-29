@@ -46,12 +46,12 @@ Make any necessary changes, then recompile.
 
 **Apps**
 
-In the file `src/Widgets/Launcher.vala`, the first few lines say
+In the file `src/Services/Launcher.vala`, the first few lines say
 
     const string apps_string = "Chrome\nFiles\nTerminal\nText Editor\nProcessing\nPython\nArduino";
     const string[] apps_term = {"chromium-browser","pantheon-files","x-terminal-emulator","gedit","/home/jackson/Programming/processing-2.0.3/processing","idle","/home/jackson/Programming/arduino-1.0.5/arduino"};
 
-The string `apps_string`contains the display names of the apps seperated by `\n`s. the string apps_term is a list of the commands to run in the terminal to activate these apps.
+The string `apps_string`contains the display names of the apps seperated by `\n`s. the string `apps_term` is a list of the commands to run in the terminal to activate these apps.
 Make any necessary changes, then recompile.
 
 **Recompiling**
