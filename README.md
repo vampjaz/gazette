@@ -5,6 +5,17 @@ A fork of the gazette newsreader for elementaryOS
 
 Forked from https://launchpad.net/gazette
 
+**Differences from the (original version)[https://launchpad.net/gazette]**
+
+* Added ability to change the font color
+* Added app launcher
+
+**To do still (please help!)**
+
+* Change settings so apps and font color can be set in the GUI settings manager
+* Fix calendar (it came with the code, but was never implemented, apparently due to bugs)
+
+
 How to compile:
 ===============
 
