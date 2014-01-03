@@ -48,6 +48,7 @@ vala_precompile(VALA_C
 	src/Services/News.vala
 	src/Services/Weather.vala
 	src/Services/Calendar.vala
+	src/Services/Stocks.vala
         src/Widgets/GazetteWindow.vala
 	src/Widgets/ShadowedLabel.vala
     ${CMAKE_BINARY_DIR}/src/Config.vala

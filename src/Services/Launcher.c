@@ -100,7 +100,7 @@ static gboolean __lambda17_ (Block2Data* _data2_, ClutterButtonEvent* e);
 static gboolean ___lambda17__clutter_actor_button_release_event (ClutterActor* _sender, ClutterButtonEvent* event, gpointer self);
 static gboolean launcher_real_update (Service* base);
 
-const gchar* apps_term[7] = {"chromium-browser", "pantheon-files", "x-terminal-emulator", "gedit", "/home/jackson/Programming/processing-2.0.3/processing", "idle", "/home/jackson/Programming/arduino-1.5.5/arduino"};
+const gchar* apps_term[7] = {"chromium-browser", "pantheon-files", "x-terminal-emulator", "gedit", "~/Programming/processing-2.0.3/processing", "idle", "~/Programming/arduino-1.5.5/arduino"};
 
 Launcher* launcher_construct (GType object_type) {
 	Launcher * self = NULL;
@@ -161,7 +161,7 @@ static gboolean __lambda17_ (Block2Data* _data2_, ClutterButtonEvent* e) {
 	{
 		const gchar* _tmp6_;
 		_tmp6_ = apps_term[item];
-		g_spawn_command_line_sync (_tmp6_, NULL, NULL, NULL, &_inner_error_);
+		g_spawn_command_line_async (_tmp6_, &_inner_error_);
 		if (_inner_error_ != NULL) {
 			if (_inner_error_->domain == G_SPAWN_ERROR) {
 				goto __catch1_g_spawn_error;

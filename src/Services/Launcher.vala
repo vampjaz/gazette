@@ -28,7 +28,7 @@ public class Launcher : Service
 			var item = (int)((e.y - root_y) / (apps_label.height - 4));
 			//print("clicked app %s, running '%s'\n".printf(item.to_string(),apps_term[item]));
 			try {
-				Process.spawn_command_line_sync (apps_term[item]);
+				Process.spawn_command_line_async (apps_term[item]);
 			} catch (SpawnError e) {
 				stdout.printf ("Error: %s\n", e.message);
 			}

@@ -83,7 +83,7 @@ var randomlinetext = "______________________________________";
 
 //    SETUP APPS:
 		
-var x= 0;
+var x = 0;
 var y = 0;
         Timeout.add(2000, () => {
 		    
@@ -106,8 +106,13 @@ var y = 0;
 		    apps.x = MARGIN;
 		    apps.y = MARGIN;
 		    window.stage.add_child (apps);
+	/*	    
+		var stocks = new Stocks ();
+		    stocks.x = MARGIN;
+		    stocks.y = size[1] - MARGIN - 300;
+		    window.stage.add_child (stocks);
 					
-	/*	var calendar = new Calendar (); 
+		var calendar = new Calendar (); 
 	            calendar.x = MARGIN;
 	            calendar.y = MARGIN * 2 + apps.height;
 	            calendar.display ();

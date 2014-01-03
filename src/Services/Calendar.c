@@ -109,7 +109,7 @@ static void calendar_real_create (Service* base) {
 	_tmp0_ = shadowed_label_new ("<span color='" textcolor "' face='Raleway' font='20'>Calendar</span>");
 	g_object_ref_sink (_tmp0_);
 	label = _tmp0_;
-	_tmp1_ = shadowed_label_new ("<span color='" textcolor "' face='Raleway' font='19'> " "	January	" " </span>\n" "<span color='" textcolor "' face='Freemono' font='13'>S  M  T  W  T  F  S </span>\n" "<span color='" textcolor "' face='Freemono' font='13'>" "   1  2  3  4  5 	 6\n7  8  9 ..." "</span>");
+	_tmp1_ = shadowed_label_new ("<span color='" textcolor "' face='Raleway' font='19'> " "	January	" " </span>\n" "<span color='" textcolor "' face='Freemono' font='13'>S  M  T  W  T  F  S </span>\n" "<span color='" textcolor "' face='Freemono' font='13'>" "   1  2  3  4  5  6\n7  8  9 ..." "</span>");
 	g_object_ref_sink (_tmp1_);
 	content = _tmp1_;
 	clutter_actor_set_x ((ClutterActor*) label, (gfloat) 0);
